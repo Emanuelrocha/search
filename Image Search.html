@@ -2,12 +2,20 @@
 <html lang="en">
     <head>
         <title>Image Search</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="hdr">
+            <a  href="index.html">Google Search</a>
+        </div>
+        <div style="height: 25vh;"></div>
+        <div style="padding: 10px;">
+            <img  alt="Google" src="google.png" height=25%>
+        </div><br />
         <form action="https://google.com/search">
             <input name="tbm" value= "isch" type= "hidden">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <input type="text" name="q"><br />
+            <div style="padding: 20px";><input type="submit" value="Image Search"></div>
         </form>
     </body>
 </html>

@@ -2,51 +2,7 @@
 <html lang="en">
     <head>
         <title>Search</title>
-        <style>
-            input[type=submit] {
-                background-color: rgb(245, 241, 241);
-                padding: 10px 20px;
-                margin: 5px;
-                border-width: 0px;
-                border-radius: 6px;
-                color: rgb(80, 79, 79);
-            }
-            input[type=submit]:hover {
-                border-width: 1px;
-                border-color: rgb(241, 240, 240);
-            }
-            @media (min-width: 750px){
-                input[type=text], select{
-                    width: 45%;
-                    padding: 12px 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 20px;
-                    box-sizing: border-box;
-                    outline: none;
-                    font-size: medium;
-                }
-            }
-            @media (max-width: 749px){
-                input[type=text], select{
-                    width: 70%;
-                    padding: 12px 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 20px;
-                    box-sizing: border-box;
-                    outline: none;
-                    font-size: medium;
-                }
-            }            
-            input[type=text]:hover {
-                border-style: groove;
-                border-color: #ccc;
-            }
-            body {
-                font-family: arial,sans-serif;
-                text-align: center;
-            }
-            #hdr {text-align: right;}
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="hdr">
@@ -54,17 +10,16 @@
             <a  href="Advanced Search.html">Advanced Search</a>
         </div>
         <div style="height: 22vh;"></div>
-            <div style="padding: 10px;"><a href="https://www.google.com">
+            <div style="padding: 10px;">
                 <img  alt="Google" src="google.png" height=25%>
-                </a>
             </div><br />
             <form action="https://google.com/search">
                 <div>
                     <input type="text" name="q">
                 </div> <br />
                 <div>
-                    <input type="submit" name="action" value="Google Search">
-                    <input type="submit" name="action" value="I'm Feeling Lucky">
+                    <input type="submit" name="btnK" value="Google Search">
+                    <input type="submit" name="btnI" value="I'm Feeling Lucky">
                 </div>
             </form>
     </body>
