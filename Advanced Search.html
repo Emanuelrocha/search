@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            input[type=submit] {
+                background-color:rgb(30, 144, 255);
+                color: white;
+                padding: 6px 12px;
+                font-weight: bold;
+                border: none;
+            }
+            input[type=submit]:hover {
+                background-color: rgb(25, 121, 214);
+            }
+            input[type=text], select{
+                width: 100%;
+                padding: 5px 10px;
+                margin: 0px 0px;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+            }
+            input[type=text]:focus {
+                border: 1px solid rgb(30,144,255); 
+            }
+            body {font-family: arial,sans-serif;}
+            #grid-0 {
+                display: grid;
+                padding-top: 10px;
+                padding-bottom: 5px;
+                padding-left: 5px;
+                grid-template-columns: 160px auto 300px;    
+                background-color: rgb(235, 233, 233);            
+            }
+            #grid {
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 20px;
+                grid-row-gap: 10px;
+                grid-template-columns: 160px 300px auto;
+            }
+            #hlink {
+                text-align: right;
+            }
+            .grid-item-1 {
+                font-size: small;
+                padding: 5px;
+            }
+            .grid-item-2 {
+                padding: 5px;
+            }
+            .grid-item-3 {
+                font-size: x-small;
+                padding: 5px;
+            }
+            .of {
+                font-size: small;
+                font-family:'Courier New', Courier, monospace;
+            }
+            .grid-item-4 {
+                text-align: right;
+            }
+            hr {
+                border: none;
+                height: 1px;
+                background-color: rgb(224, 223, 223); /* Modern Browsers */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid-0">
+            <div><a href="https://www.google.com">
+                <img title="Go to Google Home" src="google.png" width="100">
+                </a>
+            </div>
+            <div></div>
+            <div id="hlink">
+                <a href="index.html">Google Search</a>
+            </div>
+        </div>
+        <hr />
+        <br />
+        <div>
+            <label style="margin-left: 20px;  color:rgb(206, 58, 4); font-size: large;">Advanced Search</label>
+        </div>
+        <br />
+        <hr />
+        <form action="https://google.com/search">
+            <div id="grid">
+                <div style="padding: 5px; font-size:medium;">Find pages with...</div>
+                <div> </div>
+                <div><b style="font-size: small; color: gray;">To do this in the search box.</b></div>
+                <div class="grid-item-1"><label for="all">all these words:</label></div>
+                <div class="grid-item-2">
+                    <!--<input name="tbm" value= "isch" type= "hidden">-->
+                    <input type="text" name="as_q">
+                </div>
+                <div class="grid-item-3">Type the important words: <span class="of">tri-colour rat terrier </span></div>
+                <div class="grid-item-1"><label for="this">this exact word or phrase:</label></div>
+                <div class="grid-item-2">
+                    <!--<input name="tbm" value= "isch" type= "hidden">-->
+                    <input type="text" name="as_epq">
+                </div>
+                <div class="grid-item-3">Put exact words in quotes: <span class="of">"rat terrier"</span></div>
+                <div class="grid-item-1"><label for="any">any of these words:</label></div>
+                <div class="grid-item-2">
+                    <!--<input name="tbm" value= "isch" type= "hidden">-->
+                    <input type="text" name="as_oq">
+                </div>
+                <div class="grid-item-3">Type <small>OR</small> between all the words you want: <span class="of">miniature OR standard</span></div>
+                <div class="grid-item-1"><label for="none">none of these words:</label></div>
+                <div class="grid-item-2">
+                    <!--<input name="tbm" value= "isch" type= "hidden">-->
+                    <input type="text" name="as_eq">
+                </div>
+                <div class="grid-item-3">Put a minus sign just before words that you don't want: <span class="of">-rodent, -"Jack Russell"</span></div>
+                <div></div>
+                <div class="grid-item-4"><input type="submit" value="Advanced Search"></div>
+                <div></div>
+            </div>
+        </form>
+    </body>
+</html>
